@@ -2,7 +2,9 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:keys_in_flutter/local_keys.dart';
+import 'package:keys_in_flutter/my_local_key.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -18,10 +20,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:   //LocalKeyPage()
-      HomePage(),
+      home: MyLocalKeyClass()
+      //HomePage()
     );
   }
+//  HomePage(), // TODO the benefit of using KEYS in Flutter App
+//MyPage() // TODO call this for PageStorageKey example
 }
 
 class HomePage extends StatefulWidget {
