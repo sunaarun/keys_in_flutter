@@ -1,6 +1,10 @@
 # keys_in_flutter
 
-A new Flutter project.
+A new Flutter project that shows when to use **KEYS** in Flutter App and where to put them in **Widget Tree**
+You can watch the episode on YouTube, link: https://youtu.be/Y7lyYfLCrVE
+
+![keysinflutter](https://user-images.githubusercontent.com/36349126/191803351-cba05991-7fd6-4465-a111-e549b785f471.png)
+
 
 ## Getting Started
 
