@@ -2,16 +2,20 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:keys_in_flutter/my_local_key.dart';
+import 'package:keys_in_flutter/my_form.dart';
+import 'package:keys_in_flutter/LocalKeys_Eamples/my_local_key.dart';
+import 'package:keys_in_flutter/GlobalKeys_Eaxmples/pagestorage_key.dart';
+import 'package:keys_in_flutter/GlobalKeys_Eaxmples/un_recommanded_way.dart';
 
 
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+ // const MyApp({Key? key}) : super(key: key);
+   final globalBucket = PageStorageBucket();
 
   @override
   Widget build(BuildContext context) {
@@ -20,15 +24,16 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyLocalKeyClass()
-      //HomePage()
+      home: const MyScrollingList()
+      //MyFormPage()//  Call this for the form page
+      // MyLocalKeyClass() // Call this for LocalKey Examples
+      // HomePage()// the benefit of using KEYS in Flutter App
     );
   }
-//  HomePage(), // TODO the benefit of using KEYS in Flutter App
-//MyPage() // TODO call this for PageStorageKey example
 }
 
 class HomePage extends StatefulWidget {
+
   @override
   State<HomePage> createState() => _HomePageState();
 }

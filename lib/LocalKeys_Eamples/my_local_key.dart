@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:keys_in_flutter/student_info.dart';
+import 'package:keys_in_flutter/LocalKeys_Eamples/student_info.dart';
 
 class MyLocalKeyClass extends StatefulWidget {
   const MyLocalKeyClass({Key? key}) : super(key: key);
