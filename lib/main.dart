@@ -22,10 +22,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.indigo,
       ),
-      home: const MyScrollingList()
-      //MyFormPage()//  Call this for the form page
+      home: const  MyFormPage()//  Call this for the form page to use Global Key
+
+      //const MyScrollingList() // call this to show Perserve Scroll Position with PageStorageKey
+
       // MyLocalKeyClass() // Call this for LocalKey Examples
       // HomePage()// the benefit of using KEYS in Flutter App
     );
